@@ -30,7 +30,6 @@ video.addEventListener('mouseenter', () => {
     video.play();
     video.style.filter = "brightness(1.2) contrast(1.1)"; // La voiture s'illumine
 });
-
 document.addEventListener('DOMContentLoaded', () => {
     const video = document.getElementById('hero-video');
 
