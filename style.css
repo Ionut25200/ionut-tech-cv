@@ -82,3 +82,28 @@ footer {
     .container { margin: 10px; padding: 20px; }
     h1 { font-size: 1.8rem; }
 }
+/* Le style de base : Épuré et Discret */
+.btn-gomining {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: transparent; /* Fond transparent pour la discrétion */
+    color: #000000; /* Texte blanc */
+    border: 1.5px solid #444444; /* Bordure grise discrète */
+    border-radius: 8px; /* Coins légèrement arrondis (style moderne) */
+    text-decoration: none; /* Enlever le soulignement du lien */
+    font-family: 'Inter', sans-serif; /* Police typée Tech */
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease; /* Transition fluide pour l'interactivité */
+    cursor: pointer;
+}
+
+/* L'effet "Mouseover" : Couleurs GoMining */
+.btn-gomining:hover {
+    background-color: #D3FF52; /* Le jaune néon typique GoMining */
+    color: #000000; /* Le texte devient noir pour le contraste */
+    border-color: #D3FF52; /* La bordure s'illumine aussi */
+    box-shadow: 0 0 15px rgba(211, 255, 82, 0.4); /* Petit effet de halo (glow) */
+    transform: translateY(-2px); /* Légère remontée pour l'effet interactif */
+}
