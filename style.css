@@ -134,3 +134,22 @@ footer {
     text-transform: uppercase;
     pointer-events: none; /* Pour que le clic traverse le texte vers la vidéo */
 }
+/* Pour que le lien ne change pas le style visuel par défaut */
+.video-link-wrapper {
+    text-decoration: none;
+    display: block; /* Pour qu'il prenne toute la largeur */
+}
+
+.video-section {
+    cursor: pointer; /* Le curseur devient une main */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-section:hover {
+    transform: scale(1.01); /* Effet de zoom très léger au survol */
+    box-shadow: 0 0 20px rgba(211, 255, 82, 0.4); /* Halo jaune GoMining */
+}
+
+#video-overlay {
+    pointer-events: none; /* TRÈS IMPORTANT : le clic traverse le texte pour activer le lien */
+}
