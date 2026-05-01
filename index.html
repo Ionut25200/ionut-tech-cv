@@ -55,45 +55,34 @@
                 </div>
                 <!-- Section Vidéo IA : Voiture Futuriste -->
                 
-                    <div class="video-section">
-                        <!-- On a ajouté 'autoplay' ici pour que le moteur démarre tout seul -->
-                        <video id="hero-video" 
-                               width="100%" 
-                               loop 
-                               muted 
-                               playsinline 
-                               autoplay 
-                               poster="assets/eye_image.jpg">
-                            
-                            <source src="assets/car_future.mp4" type="video/mp4">
-                            
-                            <!-- Message de secours -->
-                            Votre navigateur ne supporte pas la lecture de vidéos HTML5.
-                        </video>
-                        <a href="https://www.tiktok.com/@beezeweb/" target="_blank" class="video-click-area">
-                        <div id="video-overlay">Plongez dans une autre dimension</div>
-                        </a>
-                    </div>
-                <div class="video-container" style="position: relative; width: 100%;">
+<!-- Bloc Compilé : Vidéo + Lien TikTok Sécurisé -->
+<div class="video-section" style="position: relative; width: 100%; overflow: hidden; border-radius: 15px; background: #000;">
     
-    <!-- 1. LA VIDÉO (Le fond) -->
-    <video id="hero-video" autoplay muted loop playsinline poster="assets/eye_image.jpg" style="width: 100%; border-radius: 12px; display: block;">
-        <source src="assets/projet_future_car_light.mp4" type="video/mp4">
-    </video>
-
-    <!-- 2. LE LIEN (Le calque d'interaction total) -->
-    <!-- Le target="_blank" est là, sécurisé par le rel -->
+    <!-- LE LIEN (Le "Capteur" de clic universel) -->
     <a href="https://www.tiktok.com/@beezeweb/video/7633870257823714582" 
        target="_blank" 
        rel="noopener noreferrer" 
-       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 999; text-decoration: none; display: flex; align-items: center; justify-content: center;">
+       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 999; display: flex; align-items: center; justify-content: center; text-decoration: none;">
         
-        <!-- 3. L'OVERLAY (Le visuel) -->
-        <!-- On lui dit 'pointer-events: none' pour qu'il ne bloque pas le clic -->
-        <div id="video-overlay" style="pointer-events: none; background: rgba(211, 255, 82, 0.9); color: black; padding: 10px 25px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-            Démarrer l'expérience TikTok
+        <!-- L'OVERLAY (Le signal visuel) -->
+        <div id="video-overlay" style="pointer-events: none; background: rgba(211, 255, 82, 0.95); color: #000; padding: 12px 25px; border-radius: 50px; font-weight: bold; font-family: 'Arial', sans-serif; box-shadow: 0 4px 20px rgba(0,0,0,0.5); transform: scale(1); transition: transform 0.3s ease;">
+            VOIR SUR TIKTOK
         </div>
     </a>
+
+    <!-- LA VIDÉO (Le moteur visuel en arrière-plan) -->
+    <video id="hero-video" 
+           autoplay 
+           muted 
+           loop 
+           playsinline 
+           poster="assets/eye_image.jpg" 
+           style="width: 100%; display: block; object-fit: cover;">
+        <source src="assets/projet_future_car.mp4" type="video/mp4">
+        <!-- Message de secours -->
+        Votre navigateur ne supporte pas la vidéo HTML5.
+    </video>
+
 </div>
             </section>
 
