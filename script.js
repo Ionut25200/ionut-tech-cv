@@ -23,3 +23,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+const video = document.getElementById('hero-video');
+
+// 1. L'effet "Mise en marche" au survol
+video.addEventListener('mouseenter', () => {
+    video.play();
+    video.style.filter = "brightness(1.2) contrast(1.1)"; // La voiture s'illumine
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('hero-video');
+
+    // S'assurer que la vidéo se lance bien
+    if (video) {
+        video.play().catch(error => {
+            console.log("L'autostart a été bloqué par le navigateur, l'utilisateur doit interagir.");
+        });
+
+        // Gérer le clic pour TikTok
+        video.addEventListener('click', () => {
+            window.open('https://www.tiktok.com/@ton-profil', '_blank');
+        });
+    }
+});
